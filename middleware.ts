@@ -7,6 +7,8 @@ export const config = {
 export function middleware(req: NextRequest) {
   const { device } = userAgent(req)
 
+  console.log('device: ', device)
+
   const viewport = device.type === 'mobile' ? 'mobile' : 'desktop'
 
   req.nextUrl.pathname = `_viewport/${viewport}`
