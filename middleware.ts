@@ -9,7 +9,6 @@ export default function middleware(req: NextRequest) {
 
   console.log('device: ', device)
   console.log('req: ', req)
-  console.log('user-agent: ', req.headers.get('user-agent'))
 
   const deviceType = device.type === 'desktop' ? 'desktop' : 'mobile'
 
