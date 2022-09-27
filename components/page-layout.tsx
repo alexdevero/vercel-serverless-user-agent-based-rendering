@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 const PageLayout = () => {
   const { route } = useRouter()
-  const viewport = route.replace('_viewport/', '')
+  const viewport = route.replace('/_viewport/', '')
 
   return (
     <div className={styles.container}>
